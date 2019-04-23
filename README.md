@@ -7,8 +7,10 @@ Add Admin Tools to your mission
 1. Include file in your init.c or mission file
 
 //ADMINTOOLS - GLOBAL FUNCTIONS!
-#include "$CurrentDir:\\mpmissions\\dayzOffline.chernarusplus\\_MOD\\_AdminTools\\AdminMod_Class.c" //подключаем AdminTools //mod edition (w/static variables and functions)
+ //connect AdminTools //mod edition (w/static variables and functions)
+#include "$CurrentDir:\\mpmissions\\dayzOffline.chernarusplus\\_MOD\\_AdminTools\\AdminMod_Class.c"
 ref AdminMod_Class AdminMod = new AdminMod_Class();
+
 =============================================================================================================================
 2. Add _CONF directory to your mission directory like mpmissions\dayzOffline.chernarusplus and create file ADMINS_LIST.lst (Admins) and ARBITRATORS_LIST.lst (for messages only) if need (case sensitive!)
 Files format: UID COMMENT - like this
