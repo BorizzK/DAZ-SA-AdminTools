@@ -9,15 +9,16 @@ Add Admin Tools to your mission
 //ADMINTOOLS - GLOBAL FUNCTIONS!
 #include "$CurrentDir:\\mpmissions\\dayzOffline.chernarusplus\\_MOD\\_AdminTools\\AdminMod_Class.c" //подключаем AdminTools //mod edition (w/static variables and functions)
 ref AdminMod_Class AdminMod = new AdminMod_Class();
-
+=============================================================================================================================
 2. Add _CONF directory to your mission directory like mpmissions\dayzOffline.chernarusplus and create file ADMINS_LIST.lst (Admins) and ARBITRATORS_LIST.lst (for messages only) if need (case sensitive!)
 Files format: UID COMMENT - like this
 1234567890123456 Admin1
 2234567890123456 Admin2
-
+=============================================================================================================================
 3. Add Admin tool initialization in to OnInit() function in your cusom mission class class CustomMission: MissionServer (in init.c or mission file) like this
 PS please remove all unnecessary functions calls like whitelist etc
 
+=============================================================================================================================
 class CustomMission: MissionServer
 {	
 	override void OnInit()
@@ -32,8 +33,10 @@ class CustomMission: MissionServer
  // native and other functions etc
 
 }
-	
+
+=============================================================================================================================	
 4. Add AdminTool and more functions in class CustomMission: MissionServer like this (ADMIN MOD add below native functions)
+=============================================================================================================================
 
 class CustomMission: MissionServer
 {	
@@ -273,5 +276,5 @@ class CustomMission: MissionServer
 
  
 }
-
+=============================================================================================================================
 
